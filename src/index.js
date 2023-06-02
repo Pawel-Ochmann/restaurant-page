@@ -1,5 +1,6 @@
 import './css/style.css';
 import testImage from './images/testImage.jpg';
+import test from './breakfast';
 
 const content = document.querySelector('#content');
 console.log(content);
@@ -16,3 +17,5 @@ container.appendChild(firstImage);
 content.appendChild(mainHeader);
 content.appendChild(secondaryHeader);
 content.appendChild(container);
+
+test();
