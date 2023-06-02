@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'mainFont';
+    src: url(../fonts/mainFont/Quicksand-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'secondaryFont';
+    src: url(../fonts/secondaryFont/DancingScript-VariableFont_wght.ttf);
+}
+
+.container {
+    background-color: red;
+    border: 5px solid darkolivegreen;
+    width: 500px;
+    height: 500px;
+}
+
+h1 {
+    font-family: 'mainFont';
+    color:blue;
+}
+h2 {
+    font-family: 'secondaryFont';
+    color:lightseagreen;
+}
