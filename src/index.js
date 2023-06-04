@@ -2,6 +2,7 @@ import './css/style.css';
 import './css/reset.css';
 import loadHome from './home';
 import loadMenu from './menu';
+import loadContact from './contact';
 
 const content = document.querySelector('#content');
 const page = document.createElement('div');
@@ -34,4 +35,10 @@ const menuButton = document.querySelector('.menu>button:nth-child(2)');
 menuButton.addEventListener('click', () => {
   page.innerHTML = '';
   page.appendChild(loadMenu());
+});
+
+const contactButton = document.querySelector('.menu>button:nth-child(3)');
+contactButton.addEventListener('click', () => {
+  page.innerHTML = '';
+  page.appendChild(loadContact());
 });
