@@ -1,6 +1,6 @@
 import './css/style.css';
 import './css/reset.css';
-import homePage from './home';
+import loadHome from './home';
 
 const content = document.querySelector('#content');
 
@@ -20,4 +20,4 @@ container.classList.add('container');
 container.appendChild(restaurantName);
 container.appendChild(menu);
 content.appendChild(container);
-container.appendChild(homePage());
+container.appendChild(loadHome());
