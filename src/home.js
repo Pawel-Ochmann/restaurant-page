@@ -1,6 +1,6 @@
 export default function loadHome() {
   const homePage = document.createElement('div');
-  homePage.classList.add('page');
+  homePage.classList.add('homePage');
   homePage.textContent =
     'Welcome to Spicy Heaven! Our restaurant is a culinary haven that takes you on a flavorful journey. With a menu blending international cuisine and local inspiration, our skilled chefs create dishes bursting with bold spices. Our cozy and inviting home section offers a comfortable space for memorable dining experiences. Come and indulge in our fresh and delicious vegetarian and non-vegetarian options. Join us at Spicy Heaven, where every bite is paradise!';
 

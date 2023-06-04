@@ -64,15 +64,14 @@ button:hover {
 
 .page {
     background-color: rgba(250,250,250,0.2);
-    width: 60%;
+    width: 80%;
     justify-self: center;
-    padding: 2rem;
     font-size: 1.3rem;
     line-height: 1.2;
     border-radius: 2rem;
 }
 
-.page::first-letter {
+.homePage::first-letter {
     font-family: 'secondaryFont';
     font-size: 3rem;
     font-weight: bold;
@@ -81,22 +80,80 @@ button:hover {
     margin-right: 5px;
 }
 
-.page h3 {
+.homePage {
+    padding: 2rem;
+}
+.homePage h3 {
     text-align: center;
     margin:2rem 0 1rem 0;
     font-size: 1.7rem;
     text-decoration: underline;
 }
-.page>div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 
-.page>div p:nth-child(odd) {
+.homePage>div p:nth-child(odd) {
     margin: .2rem 0 .2rem 60%;
 }
 
-.page>div p:nth-child(even) {
+.homePage>div p:nth-child(even) {
     text-align: end;
     margin: .2rem 60% .2rem 0rem;
+}
+
+.homePage>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin:0;
+}
+
+.menuContainer>div{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    padding: 1rem;
+}
+
+.menuContainer>div>p {
+    grid-column: span 2;
+    width:100%;
+}
+
+.menuContainer h3 {
+    font-family: 'secondaryFont';
+    font-size:2rem;
+}
+
+.menuContainer h4 {
+    justify-self: end;
+    align-self: end;
+}
+
+.menuContainer>div:nth-child(odd) {
+    background-color: rgba(250,250,250,0.6);
+    color:black;
+}
+
+.menuContainer>div:nth-child(even) {
+    background-color: rgba(0,0,0,0.6);
+    color:white;
+}
+.menuHeader {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.menuPageNote {
+ text-align: center;
+ text-decoration-line: underline;
+ font-weight: lighter;
+ margin: 1rem;
+}
+
+.menuPageWishes {
+margin: 1rem;
+text-align: center;
+font-family: 'secondaryFont';
+font-size: 2rem;
 }
