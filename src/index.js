@@ -3,9 +3,12 @@ import './css/reset.css';
 import loadHome from './home';
 import loadMenu from './menu';
 import loadContact from './contact';
+import loadSocials from './socials';
 
 const content = document.querySelector('#content');
 const page = document.createElement('div');
+const socialsContainer = document.createElement('div');
+socialsContainer.appendChild(loadSocials());
 page.classList.add('page');
 const container = document.createElement('div');
 const restaurantName = document.createElement('h1');
@@ -20,6 +23,7 @@ menu.classList.add('menu');
 
 restaurantName.textContent = 'Spicy Heaven';
 container.classList.add('container');
+container.appendChild(socialsContainer);
 container.appendChild(restaurantName);
 container.appendChild(menu);
 content.appendChild(container);

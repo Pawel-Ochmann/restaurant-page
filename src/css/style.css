@@ -18,7 +18,6 @@ html {
 }
 
 .container {
-padding-top: 5rem;
 display: grid;
 gap:4rem;
 align-content: start;
@@ -204,9 +203,38 @@ font-size: 2rem;
 
 .socials {
     display: flex;
+    justify-content: center;
+    gap:calc(.5rem + 2vw);
+    width: 50%;
+    justify-self: center;
+    padding-top: 1rem;
 }
-.socials>i {
-    color:black;
-    width:20px;
-    height: 20px;
+.facebook,
+.twitter,
+.instagram {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .5s;
+    transform-origin: bottom;
+}
+
+.facebook:hover {
+    color:rgb(9,126,236);
+    transform: scale(1.1);
+}
+
+.twitter:hover {
+    color:rgb(29,155,240);
+    transform: scale(1.1);
+}
+.instagram:hover {
+    color:#E1306C;
+    transform: scale(1.1);
+}
+
+.container>div:first-child {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: end;
 }
