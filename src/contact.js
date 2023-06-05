@@ -1,3 +1,5 @@
+import loadSocials from './socials';
+
 export default function contactPage() {
   const contact = document.createElement('div');
   contact.classList.add('contactPage');
@@ -18,13 +20,16 @@ export default function contactPage() {
   map.loading = 'lazy';
   contact.appendChild(map);
   const tel = document.createElement('div');
-  const telIcon = document.createElement('i');
-  telIcon.src = './images/tel.svg';
+  tel.classList.add('telContainer');
+  const telIcon = document.createElement('span');
+  telIcon.classList.add('material-symbols-outlined');
+  telIcon.textContent = 'call';
   const telNumber = document.createElement('p');
   telNumber.textContent = '999 999 999';
   tel.appendChild(telIcon);
   tel.appendChild(telNumber);
   contact.appendChild(tel);
+  contact.appendChild(loadSocials());
 
   return contact;
 }
