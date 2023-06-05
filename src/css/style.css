@@ -54,8 +54,12 @@ button {
     border: none;
     width: min-content;
     transition: .3s;
-    border-bottom: .1em solid white;
+    /* border-bottom: .1em solid white; */
     cursor: pointer;
+}
+
+.activeButton {
+    border-bottom: 1px solid white;
 }
 
 button:hover {
@@ -237,4 +241,8 @@ font-size: 2rem;
     height: 2rem;
     display: flex;
     justify-content: end;
+}
+
+.googleMap {
+    filter:grayscale(100%);
 }

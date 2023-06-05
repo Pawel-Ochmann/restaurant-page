@@ -30,19 +30,30 @@ content.appendChild(container);
 page.appendChild(loadHome());
 container.appendChild(page);
 
+function toggleActiveClass() {
+  const buttons = document.querySelectorAll('.menu>button');
+  buttons.forEach((e) => {
+    e.classList.remove('activeButton');
+    this.classList.add('activeButton');
+  });
+}
+
 const homeButton = document.querySelector('.menu>button:nth-child(1)');
 homeButton.addEventListener('click', () => {
   page.innerHTML = '';
   page.appendChild(loadHome());
+  toggleActiveClass.call(homeButton);
 });
 const menuButton = document.querySelector('.menu>button:nth-child(2)');
 menuButton.addEventListener('click', () => {
   page.innerHTML = '';
   page.appendChild(loadMenu());
+  toggleActiveClass.call(menuButton);
 });
 
 const contactButton = document.querySelector('.menu>button:nth-child(3)');
 contactButton.addEventListener('click', () => {
   page.innerHTML = '';
   page.appendChild(loadContact());
+  toggleActiveClass.call(contactButton);
 });
